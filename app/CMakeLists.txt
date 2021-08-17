@@ -23,7 +23,8 @@ add_library( # Sets the name of the library.
         src/main/cpp/c_use_java_obj.cpp
         src/main/cpp/crash_test.cpp
         src/main/cpp/c_call_super_method.cpp
-        src/main/cpp/set_in_value.cpp)
+        src/main/cpp/set_in_value.cpp
+        src/main/cpp/udptest.cpp)
 
 # Searches for a specified prebuilt library and stores the path as a
 # variable. Because CMake includes system libraries in the search path by

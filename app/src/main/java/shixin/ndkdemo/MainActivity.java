@@ -44,8 +44,16 @@ public class MainActivity extends AppCompatActivity {
 //        testSetInField(bytes);
 //        Log.i(TAG, Arrays.toString(bytes));
 
-        testCallSuper();
+//        testCallSuper();
+
+        testUDP();
     }
+
+    private void testUDP() {
+        testUDPMethod();
+    }
+
+    private native void testUDPMethod();
 
     private void testCallSuper() {
         /*使用java来创建进行调用say方法*/
@@ -53,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
 //        beibi.say();
 
         //jni来调用
-        testCallSuperMethod(13,"大北鼻");
+        testCallSuperMethod(13, "大北鼻");
     }
 
     /**
@@ -61,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
      *
      * @return
      */
-    private native int testCallSuperMethod(int age,String name);
+    private native int testCallSuperMethod(int age, String name);
 
     /**
      * 测试传入字段
